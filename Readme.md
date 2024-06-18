@@ -81,6 +81,21 @@ cd /usr/ports/graphics/glfw && make install clean
 
 > Now wait, make sure to select the PREEDIT option when you are given the fancy TUI (Terminal User Interface)!
 
+    ┌────────────────────────────────────────┤glfw-3.4├─────────────────────────────────────────┐
+    │ 'F1' for Ports Collection help.                                                           │  
+    │ ┌───────────────────────────────────────────────────────────────────────────────────────┐ │  
+    │ │new [X] DOCS     Build and/or install documentation                                    │ │  
+    │ │new [X] EXAMPLES Build and/or install examples                                         │ │  
+    │ │new [X] PREEDIT  Add patches for run Minecraft (https://github.com/glfw/glfw/pull/2130)│ │  
+    │ │─────────────────── Window creation platform [select at least one] ────────────────────│ │  
+    │ │new [X] WAYLAND  Wayland (graphics) support                                            │ │  
+    │ │new [X] X11      X11 (graphics) support                                                │ │  
+    │ └───────────────────────────────────────────────────────────────────────────────────────┘ │  
+    ├───────────────────────────────────────────────────────────────────────────────────────────┤  
+    │                                   [  OK  ]     [Cancel]                                   │  
+    └───────────────────────────────────────────────────────────────────────────────────────────┘  
+      
+
 <details>
 
 <summary>Accidentally clicked passed it? Try this!</summary>
