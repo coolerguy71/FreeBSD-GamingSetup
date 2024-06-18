@@ -69,6 +69,7 @@ Example:
 pkg install git && rm -rf /usr/ports && git clone --depth 1 -o freebsd -b main https://git.FreeBSD.org/ports.git
 ```
 
+> Install all the necessary Prism Launcher and Minecraft dependencies! (A lot, I know.)
 ```
 pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 lwjgl lwjgl3 git && git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git && cd PrismLauncher && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr/local" -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON && cd build && sudo make -j$(nproc) install 
 ```
@@ -77,6 +78,7 @@ pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 l
 ```
 cd /usr/ports/graphics/glfw && make install clean
 ```
+
 > Now wait, make sure to select the PREEDIT option when you are given the fancy TUI (Terminal User Interface)!
 
 <details>
@@ -90,7 +92,12 @@ pkg remove glfw && cd /usr/ports/graphics/glfw && make clean && make rmconfig
 
 </details>
 
+> Okay, moving on, let's get minecraft-runtime set up! (Run this as a regular user, not root!)
 
+```
+cd && mkdir .lwjgl3 && cd .lwjgl3 && git clone https://github.com/coolerguy71/FreeBSD-GamingSetup.git && cp FreeBSD-GamingSetup/minecraft-runtime ~/.lwjgl3 && rm FreeBSD-GamingSetup
+```
+(UNIFINISHED, WILL BE UPDATED SOON!)
 
 ===================================================
 > Happy gaming!
