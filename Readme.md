@@ -7,7 +7,7 @@
 > TO BECOME ROOT, RUN: 
 
 ```
- su
+ su -
 ```
 > Password:
 
@@ -18,7 +18,7 @@
 > TO GO BACK TO A REGULAR USER:
 
 ```
-su 'username'
+exit
 ```
 
 ===================================================
