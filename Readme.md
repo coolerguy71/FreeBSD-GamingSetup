@@ -112,7 +112,11 @@ pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 l
 ```
 cd && mkdir .lwjgl3 && cd .lwjgl3 && git clone https://github.com/coolerguy71/FreeBSD-GamingSetup.git && cp FreeBSD-GamingSetup/minecraft-runtime ~/.lwjgl3 && rm -rf FreeBSD-GamingSetup
 ```
-(UNIFINISHED, WILL BE UPDATED SOON!)
+> Now, after all of this, let's move into Prism Launcher! Select your language, and go through setup, and follow below!
+
+![image](https://github.com/coolerguy71/FreeBSD-GamingSetup/assets/168948679/793382a4-c435-46c0-ab35-66bae1aa97ac)
+
+Log in with your Microsoft account, and you're good to go!
 
 ===================================================
 > Happy gaming!
