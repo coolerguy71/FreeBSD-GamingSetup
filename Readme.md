@@ -58,7 +58,7 @@ Example:
 
 ===================================================
 
-## Minecraft
+# Minecraft
 > It's a popular game, and isn't too hard to get running natively!
 
 > (now's probably a good time to update your ports tree, there are many new thingimajigs you need)
@@ -104,7 +104,7 @@ pkg remove glfw && cd /usr/ports/graphics/glfw && make clean && make rmconfig
 
 > Install all the necessary Prism Launcher and Minecraft dependencies! (A lot, I know.)
 ```
-pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 lwjgl lwjgl3 git && git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git && cd PrismLauncher && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr/local" -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON && cd build && sudo make -j$(nproc) install 
+pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 lwjgl lwjgl3 git && git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git && cd PrismLauncher && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr/local" -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON && cd build && make -j$(nproc) install 
 ```
 
 > Okay, moving on, let's get minecraft-runtime set up! (Run this as a regular user, not root!)
@@ -118,19 +118,20 @@ cd && git clone https://github.com/pog5/minecraft-freebsd.git && mkdir .minecraf
 ```
 ee ~/.minecraft/minecraft-runtime
 
-change the 4th line to this: JAVA_HOME=/usr/local/openjdk21
+change the 4th line to this: export JAVA_HOME=/usr/local/openjdk21
 ```
 
 > Now, after all of this, let's move into Prism Launcher! Select your language, and go through setup, and follow below!
 
 ![image](https://github.com/coolerguy71/FreeBSD-GamingSetup/assets/168948679/793382a4-c435-46c0-ab35-66bae1aa97ac)
+> *image is outdated, instead of .lwjgl3, pretend it's .minecraft :)
 
 Log in with your Microsoft account, and you're good to go!
 
 ===================================================
 > Happy gaming!
 
-> Doc By: coolguy71
+> Documentation By: coolguy71
 
 > Mizuma by Alexander88207
 
