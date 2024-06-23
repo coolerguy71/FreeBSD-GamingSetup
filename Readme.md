@@ -22,24 +22,26 @@ exit
 ```
 
 ===================================================
-## WINE-based Game Launcher:
+# WINE-based Game Launcher:
 
-# Mizuma:
+## Mizuma:
 
 ```
 pkg install mizuma
 ```
 
-## Steam Linuxulator Launcher:
+# Steam Linuxulator Launcher:
+
+## Linux Steam Utils:
 
 ```
 pkg install linux-steam-utils
 ```
 
 ===================================================
-## PROTON
+# PROTON
 
-Wine-Proton:
+## Wine-Proton:
 
 ```
 pkg install wine-proton && /usr/local/wine-proton/bin/pkg32.sh install wine-proton mesa-dri
@@ -49,7 +51,7 @@ To use Proton, do:
 ```
 /usr/local/wine-proton/bin/wine /path/to/your/application.exe --no-sandbox
 ```
-> (many apps are broken without the --no-sandbox flag)
+> (no sandbox fixes Electron and Chromium apps, if running anything other than this, you may disable.)
 Example:
 
 ```
@@ -64,7 +66,10 @@ Example:
 > (now's probably a good time to update your ports tree, there are many new thingimajigs you need)
 
 ```
-pkg install git && rm -rf /usr/ports && git clone --depth 1 -o freebsd -b main https://git.FreeBSD.org/ports.git /usr/ports
+pkg install git && rm -rf /usr/ports
+```
+```
+git clone --depth 1 -o freebsd -b main https://git.FreeBSD.org/ports.git /usr/ports
 ```
 
 > We now need GLFW with an option enabled to get Minecraft working!
@@ -101,6 +106,8 @@ pkg remove glfw && cd /usr/ports/graphics/glfw && make clean && make rmconfig
 > Then try the previous steps again!
 
 </details>
+^
+
 
 > Install all the necessary Prism Launcher and Minecraft dependencies! (A lot, I know.)
 ```
