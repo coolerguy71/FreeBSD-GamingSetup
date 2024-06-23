@@ -98,7 +98,7 @@ cd /usr/ports/graphics/glfw && make install clean
       
 <details>
 
-<summary>Accidentally clicked passed it? Try this!</summary>
+<summary>Accidentally clicked the above command? Try this!</summary>
 
 ```
 pkg remove glfw && cd /usr/ports/graphics/glfw && make clean && make rmconfig
@@ -106,8 +106,7 @@ pkg remove glfw && cd /usr/ports/graphics/glfw && make clean && make rmconfig
 > Then try the previous steps again!
 
 </details>
-^
-
+(not the below step)
 
 > Install all the necessary Prism Launcher and Minecraft dependencies! (A lot, I know.)
 ```
