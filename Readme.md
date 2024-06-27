@@ -37,6 +37,7 @@ pkg install mizuma
 ```
 pkg install linux-steam-utils
 ```
+**Currently broken, wait a couple weeks! (6-29-24)
 
 ===================================================
 # PROTON
@@ -116,7 +117,7 @@ pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 l
 > Okay, moving on, let's get minecraft-runtime set up! (Run this as a regular user, not root!)
 
 ```
-cd && git clone https://github.com/pog5/minecraft-freebsd.git && mkdir .minecraft && cd minecraft-freebsd && tar xf lwjgl3.tar.gz && cp ~/minecraft-freebsd/lwjgl3/minecraft-runtime ~/.minecraft && cd && rm-rf minecraft-freebsd
+cd && git clone https://github.com/pog5/minecraft-freebsd.git && mkdir .minecraft && cd minecraft-freebsd && tar xf lwjgl3.tar.gz && cp ~/minecraft-freebsd/lwjgl3/minecraft-runtime ~/.minecraft && cd && rm -rf minecraft-freebsd
 ```
 
 > **Note that this minecraft-runtime can only go up to about Minecraft 1.20.4?? (Not sure but somewhere around this), but to play newer versions of Minecraft, we will have to modify minecraft-runtime.
@@ -124,7 +125,9 @@ cd && git clone https://github.com/pog5/minecraft-freebsd.git && mkdir .minecraf
 ```
 ee ~/.minecraft/minecraft-runtime
 
-change the 4th line to this: export JAVA_HOME=/usr/local/openjdk21
+change the 4th line to this:
+
+export JAVA_HOME=/usr/local/openjdk21
 ```
 
 > Now, after all of this, let's move into Prism Launcher! Select your language, and go through setup, and follow below!
