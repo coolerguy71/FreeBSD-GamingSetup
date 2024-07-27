@@ -120,7 +120,7 @@ pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 l
 cd && git clone https://github.com/pog5/minecraft-freebsd.git && mkdir .minecraft && cd minecraft-freebsd && tar xf lwjgl3.tar.gz && cp ~/minecraft-freebsd/lwjgl3/minecraft-runtime ~/.minecraft && cd && rm -rf minecraft-freebsd
 ```
 
-> **Note that this minecraft-runtime can only go up to about Minecraft 1.20.4?? (Not sure but somewhere around this), but to play newer versions of Minecraft, we will have to modify minecraft-runtime.
+> **Note that this minecraft-runtime can only go up to about Minecraft 1.20.4?? (Not sure but somewhere around this), but to play newer versions of Minecraft (1.20.5?? and above, (including 1.26), we will have to modify minecraft-runtime.
 
 ```
 ee ~/.minecraft/minecraft-runtime
