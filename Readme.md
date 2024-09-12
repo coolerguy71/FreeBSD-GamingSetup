@@ -137,6 +137,8 @@ export JAVA_HOME=/usr/local/openjdk21
 
 Log in with your Microsoft account, and you're good to go!
 
+Note: If you want to use the sodium renderer, please use: ```-Dsodium.checks.issue2561=false``` in your Java flag!
+
 ===================================================
 > Happy gaming!
 
