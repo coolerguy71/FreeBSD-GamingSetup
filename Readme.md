@@ -64,54 +64,12 @@ Example:
 # Minecraft
 > It's a popular game, and isn't too hard to get running natively!
 
-> (now's probably a good time to update your ports tree, there are many new thingimajigs you need)
-
-```
-pkg install git && rm -rf /usr/ports
-```
-```
-git clone --depth 1 -o freebsd -b main https://git.FreeBSD.org/ports.git /usr/ports
-```
-
-> We now need GLFW with an option enabled to get Minecraft working!
-
-```
-cd /usr/ports/graphics/glfw && make install clean
-```
-
-
-
-> Now wait, make sure to select the PREEDIT option when you are given the fancy TUI (Terminal User Interface)!
-
-    ┌────────────────────────────────────────┤glfw-3.4├─────────────────────────────────────────┐
-    │ 'F1' for Ports Collection help.                                                           │  
-    │ ┌───────────────────────────────────────────────────────────────────────────────────────┐ │  
-    │ │new [X] DOCS     Build and/or install documentation                                    │ │  
-    │ │new [X] EXAMPLES Build and/or install examples                                         │ │  
-    │ │new [X] PREEDIT  Add patches for run Minecraft (https://github.com/glfw/glfw/pull/2130)│ │  
-    │ │─────────────────── Window creation platform [select at least one] ────────────────────│ │  
-    │ │new [X] WAYLAND  Wayland (graphics) support                                            │ │  
-    │ │new [X] X11      X11 (graphics) support                                                │ │  
-    │ └───────────────────────────────────────────────────────────────────────────────────────┘ │  
-    ├───────────────────────────────────────────────────────────────────────────────────────────┤  
-    │                                   [  OK  ]     [Cancel]                                   │  
-    └───────────────────────────────────────────────────────────────────────────────────────────┘  
-      
-<details>
-
-<summary>Accidentally clicked the above command? Try this!</summary>
-
-```
-pkg remove glfw && cd /usr/ports/graphics/glfw && make clean && make rmconfig
-```
-> Then try the previous steps again!
-
 </details>
 (not the below step)
 
 > Install all the necessary Prism Launcher and Minecraft dependencies! (A lot, I know.)
 ```
-pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 lwjgl lwjgl3 git && git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git && cd PrismLauncher && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr/local" -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON && cd build && make -j$(nproc) install 
+pkg install qt5 qt6 cmake kf5-extra-cmake-modules openjdk8 openjdk17 openjdk21 lwjgl lwjgl3 glfw git && git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git && cd PrismLauncher && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr/local" -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON && cd build && make -j$(nproc) install 
 ```
 
 > Okay, moving on, let's get minecraft-runtime set up! (Run this as a regular user, not root!)
