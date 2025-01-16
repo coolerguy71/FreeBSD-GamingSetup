@@ -29,6 +29,12 @@ exit
 ```
 pkg install mizuma
 ```
+
+## Steam BSD Runtime:
+
+```
+https://github.com/es-j3/Steam-BSD-Runtime/
+```
 ===================================================
 # PROTON
 
@@ -52,12 +58,9 @@ Example:
 ===================================================
 > Happy gaming!
 
-> Documentation By: coolguy71
+> Documentation By: es-j3 (coolguy71 is old account)
 
 > Mizuma by Alexander88207
 
-> linux-steam-utils by shkhln
-
-> Minecraft doc from pog5: (updated by coolguy71 on this guide)
-
+> Steam BSD Runtime
 ===================================================
