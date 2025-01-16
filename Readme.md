@@ -29,16 +29,6 @@ exit
 ```
 pkg install mizuma
 ```
-
-# Steam Linuxulator Launcher:
-
-## Linux Steam Utils:
-
-```
-pkg install linux-steam-utils
-```
-**Currently broken, wait a couple weeks! (6-29-24)
-
 ===================================================
 # PROTON
 
